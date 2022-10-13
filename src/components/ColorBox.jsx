@@ -38,6 +38,12 @@ export default function ColorBox({ color }) {
         bg={color.color}
         borderRadius="md"
         onClick={onCopy}
+        sx={{
+            _hover: {
+                cursor: "pointer",
+                opacity:'1',
+            }
+        }}
       >
         {color.color}
       </Box>
